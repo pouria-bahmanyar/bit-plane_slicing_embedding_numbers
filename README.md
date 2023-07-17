@@ -1,9 +1,9 @@
 # bit-plane_slicing_embedding_numbers
 ## bit-plane slice
-In this project, I used ```bit-plane slicing``` to embed an 8 digit number in a picture. First let us have a look at ```bit-plane slicing``` and its definition.
+In this project, I used ```bit-plane slicing``` to embed an 8-digit number in a picture. First, let us have a look at ```bit-plane slicing``` and its definition.
 
-when er want to extract bit planes of an image, first we have to represent each pixel in ```binary``` form. then, we will put all of the MSBs (Most Significant Bits) in the first plane. (First plane consists only ```0``` and (usually) ```128```). then, in the second plane we will put all of the second highest value in each pixel. we will continue this approach for all 7 planes.(I consider the value of each pixel from ```0``` to ```255``` which is ```1111111``` in binary system).
-ti make it more explicit, look at the following image:
+when we want to extract bit planes of an image, first we have to represent each pixel in ```binary``` form. then, we will put all of the MSBs (Most Significant Bits) in the first plane. (The first plane consists only ```0``` and (usually) ```128```). then, in the second plane, we will put all of the second-highest values in each pixel. we will continue this approach for all 7 planes.(I consider the value of each pixel from ```0``` to ```255``` which is ```1111111``` in binary system).
+to make it more explicit, look at the following image:
 
 ![bit-planes](./assets/bit-plane.png)
 
@@ -11,9 +11,9 @@ for an image, I extracted its bit-planes and this is the result:
 
 ![bit-planes extraction](./assets/planes%20extraction.png)
 
-Now, what if the original image were just a meaningless image and when we would extract its bit planes, we would saw some specific images? 
+Now, what if the original image were just a meaningless image and when we would extract its bit planes, we would see some specific images? 
 
-In this project I made an algorithm to make this possible.
+In this project, I made an algorithm to make this possible.
 
 Here are the results of the project: 
 
